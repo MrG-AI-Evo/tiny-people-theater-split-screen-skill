@@ -18,8 +18,19 @@ A Codex Skill that turns each uploaded real photograph into one complete 3:4 spl
 把下面这句话发送给 Codex：
 
 ```text
-请使用 $skill-installer 从这个公开 GitHub 仓库的根目录安装 Tiny People Theater: Split-Screen Edition：
-https://github.com/MrG-AI-Evo/tiny-people-theater-split-screen-skill
+请使用 $skill-installer 安装这个公开 GitHub 仓库中的 Skill：
+仓库：https://github.com/MrG-AI-Evo/tiny-people-theater-split-screen-skill
+路径：.
+安装名：tiny-people-theater-split-screen
+```
+
+如果你在 Codex CLI 中安装，也可以直接运行：
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo MrG-AI-Evo/tiny-people-theater-split-screen-skill \
+  --path . \
+  --name tiny-people-theater-split-screen
 ```
 
 安装后，Skill 的调用名是：
@@ -54,4 +65,3 @@ $tiny-people-theater-split-screen
 仓库包含 `scripts/normalize_photo.sh`。当 Apple Photos 导出的 `.jpeg` 实际为 MPO 或 HEIC、导致图像工具无法读取时，可在不修改原文件的前提下转换为普通 JPEG。该脚本仅在需要时使用，并依赖 ImageMagick。
 
 Search keywords: 小人剧场分屏版 Skill, 真实照片趣味小人海报, 上下分屏海报, Codex image skill, tiny people poster, split-screen editorial photo.
-
